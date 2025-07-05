@@ -17,7 +17,7 @@ import re
 Abhi=ChatBot('My Pro')
 # Abhi.storage.drop()  #here we have to remeber that we have to give the varibale name in which chatbot is assigned
 c=pd.read_csv('general_knowledge_qa.csv')
-d=pd.read_csv('general_knowledge_10000.csv')
+# d=pd.read_csv('general_knowledge_10000.csv')
 e=pd.read_csv('roman_hindi_gk_qa_500.csv')          #IMPORTING DATASETS
 f=pd.read_csv('world_general_knowledge_dataset_120.csv')
 g=pd.read_csv('world_general_knowledge_dataset_sample.csv')
@@ -55,13 +55,11 @@ dataset=[
     'Hmmm!!',
     'Tera naam kya hai?',
     'Mera naam Techie hai!!',
-    'Tumhara kaam kya hai?',
-    'Mera kaam pucche gye sawalo ka jawaab dena hai!!',
+
 
 
 ]
 
-d
 
 trainers=ListTrainer(Abhi)
 
@@ -202,8 +200,8 @@ def ask():
     listbox.insert(END,f'YOU: {ques}')
     # typing_effect(f'YOU: {str(ques)}')
     query.delete(0,END)
-    # main_page.after(1500,lambda:get_answer(ques))
-    threading.Thread(target=get_answer,args=(ques,)).start() #this will run get_answer in background
+    main_page.after(1500,lambda:get_answer(ques))
+    # threading.Thread(target=get_answer,args=(ques,)).start() #this will run get_answer in background
 
 def preprocess_input(text):
     text=text.lower()

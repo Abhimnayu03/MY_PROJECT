@@ -130,7 +130,7 @@ submit_frame.grid(sticky='n',padx=10)
 def Submit():
     with open('details.txt','a') as d:
         d.write(f'Name: {user_name.get()} \n Password: {pass_word.get()} \n')
-        if user_name.get()=='AbhimanyuSingh' and pass_word.get()=='abhi8825':
+        if user_name.get()=='AmanSingh' and pass_word.get()=='abhi8825':
             switch_pages(login_page,main_page)
 
             msg.showinfo('INFO','Submission Successful')

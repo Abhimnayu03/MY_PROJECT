@@ -1,10 +1,8 @@
-YOU: hloo
-BOT: hloo
-YOU: hii
-BOT: Hlo, waise mujhe hindi bhi aati hai!!
-YOU: namm kya hai?
+YOU: hiii
+BOT: hiii
+YOU: kaisa hai?
 BOT: Mera naam Techie hai!!
-YOU: hindi aati hai?
-BOT: haa!! Bilkul
-YOU: who built you?
-BOT: Students of IIT patna built me,from group 138(for capstone project)
+YOU: what is your name
+BOT: My name is Techie
+YOU: tera naam kya hai?
+BOT: Mera naam Techie hai!!
